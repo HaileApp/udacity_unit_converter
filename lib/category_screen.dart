@@ -91,7 +91,9 @@ class _CategoryRouteState extends State<CategoryRoute>{
      }
      var categoryIndex = 0;
      data.keys.forEach((key){
-       final List<Unit> units = data[key].map<Unit>((dynamic data) => Unit.fromJson(data)).toList();
+       final List<Unit> units = data[key].map<Unit>((dynamic data) {
+         return Unit.fromJson(data);
+       }).toList();
 
        var category = Category(
          name : key,
