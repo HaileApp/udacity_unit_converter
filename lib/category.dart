@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:udacity_unit_converter/unit.dart';
+import 'package:meta/meta.dart';
 
 class Category {
 
@@ -8,7 +9,7 @@ class Category {
   final List<Unit> units;
   final String iconLocation;
 
-  Category ({
+  const Category ({
     @required this.name,
     @required this.color,
     @required this.units,

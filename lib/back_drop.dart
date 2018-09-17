@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:udacity_unit_converter/category.dart';
 import 'dart:math' as math;
+import 'package:meta/meta.dart';
 
 const double _kFlingVelocity = 2.0;
 
